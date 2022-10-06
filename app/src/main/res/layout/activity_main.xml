@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity1"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="600dp"
+        android:layout_marginLeft="16dp"
+        android:text="Palembang\nWater"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menyediakan air bersih, sehat, dan terjaga\nkualitasnya"
+        android:layout_marginBottom="64dp"
+        android:textSize="15sp"
+        android:textColor="#494747"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#0D47A1"
+        android:padding="8dp"
+        android:text="LOGIN"
+        app:cornerRadius="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="367dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#0D47A1"
+        android:padding="16dp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textColorLink="#01579B"
+        app:cornerRadius="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Visit us"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
